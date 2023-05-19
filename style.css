@@ -5,6 +5,7 @@
 }
 
 
+
 nav {
   display: flex;
   align-items: center;
@@ -52,4 +53,41 @@ li a:hover {
 
   color: yellow;
   transition: 0.5s;
+}
+
+
+header{
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  min-height: 70vh;
+
+}
+
+
+.carrossel{
+  display: flex;
+  gap: 5px;
+  box-shadow: 2px 2px 4px #000000;
+  overflow: hidden;
+  height: 59vh;
+  width: 30vw;
+  border-radius: 25px;
+  
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  transition: transform 0.6s ease-in-out;
+  transform: translateX(0);
+}
+
+.logo-carro{
+  object-fit: cover;
+  height: 59vh;
+  width: 30vw;
+  border-radius: 25px;
 }
