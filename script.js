@@ -3,6 +3,8 @@ const img = document.querySelectorAll("#carr img");
 
 let idx = 0;
 
+
+// script carrossel
 function carr() {
   idx++;
 
@@ -13,5 +15,6 @@ function carr() {
   imgs.style.transform = `translateX(${-idx * 30}vw)`
 
 }
+// fim script carrossel
 
 setInterval(carr,1800);
