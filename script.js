@@ -13,7 +13,7 @@ function carr() {
     idx = 0;
   }
 
-  imgs.style.transform = `translateX(${-idx * 100}vw)`
+  imgs.style.transform = `translateX(${-idx * 95}vw)`
 
 }
 // fim script carrossel

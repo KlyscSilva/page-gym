@@ -82,10 +82,10 @@ header{
 
 .carrossel{
   display: flex;
-  box-shadow: 2px 2px 4px #000000;
+  box-shadow: 2px 2px 4px #bd8e38;
   overflow: hidden;
   height: 50vh;
-  width: 100vw;
+  width: 95vw;
   border-radius: 20px;
   
 }
@@ -98,9 +98,9 @@ header{
 }
 
 .logo-carro{
-  object-fit: contain;
+  object-fit: scale-down;
   height: 50vh;
-  width: 100vw;
+  width: 95vw;
   
 }
 
