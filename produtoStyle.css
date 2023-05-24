@@ -139,7 +139,7 @@ html {
 }
 
 .bt {
-  width: 15%;
+  width: 10%;
   display: flex;
   flex-direction: column;
   scroll-snap-align: start;
@@ -158,7 +158,7 @@ html {
   display: flex;
   align-items: center;
   width: 80%;
-  height: 30px;
+  height: 40px;
   justify-content: space-between;
   background-color: #FFFF;
 }
@@ -166,7 +166,7 @@ html {
 .bt .icon {
   background-color: #00FF15;
   padding: 20px;
-  width: 35%;
+  width: 40%;
   z-index: 2;
   color: #FFFF;
 }
@@ -198,7 +198,7 @@ html {
 
 .bt button:hover span {
   color: #0a0a0a;
-  font-weight: 800;
+  font-weight: 600;
 }
 
 
