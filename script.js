@@ -1,6 +1,7 @@
 const imgs = document.getElementById("carr")
 const img = document.querySelectorAll("#carr img");
 
+
 let idx = 0;
 
 
@@ -12,9 +13,16 @@ function carr() {
     idx = 0;
   }
 
-  imgs.style.transform = `translateX(${-idx * 30}vw)`
+  imgs.style.transform = `translateX(${-idx * 100}vw)`
 
 }
 // fim script carrossel
 
 setInterval(carr,1800);
+
+
+
+function zeusIcon() {
+  alert("Olá me chamo Zeus, seja bem vindo a minha loja.")
+}
+
