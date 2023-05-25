@@ -13,17 +13,17 @@ html {
 /* Section produtos */
 .produtos {
   width: 100vw;
-  height: 200vh;
+  height: 220vh;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   border: 2px solid #FFFFFF;
-  margin: 0 auto;
+  margin-top: 3%;
 }
 
 /* Titulo dos produtos */
-.produtos h2 {
+.produtos .titulo-produtos {
   color: #0a0a0a;
   font-size: 50px;
   text-align: center;
@@ -31,7 +31,7 @@ html {
 }
 
 /*Descrição dos produtos na paarte frontal do Card */
-.desc-produtos h2{
+.produtos .desc-produtos h2{
   color: #FFFFFF;
   font-size: 20px;
  }
@@ -46,6 +46,7 @@ html {
   width: 90vw;
   height: 25%;
   cursor: pointer;
+  margin-top: 5%;
   
 }
 
@@ -108,8 +109,7 @@ html {
 /*Linha seprando imagem do texto frontal do card*/
 .front .line{
   width: 100%;
-  border-bottom: 1px solid #393939;
-  color: #393939;
+  border-bottom: 1px solid #FFFFFF;
   margin: 15% 0 5% 0;
 }
 
