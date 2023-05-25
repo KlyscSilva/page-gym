@@ -11,6 +11,7 @@ html {
   
 }
 
+
 .produtos {
   width: 100vw;
   height: 200vh;
@@ -23,9 +24,11 @@ html {
 }
 
 .produtos h2 {
-  color: #FFFFFF;
-  font-size: 55px;
+  color: #0a0a0a;
+  font-size: 50px;
   text-align: center;
+  letter-spacing: 1px;
+
 }
 
 .ajuste h2{
@@ -43,10 +46,11 @@ html {
   width: 90vw;
   height: 25%;
   cursor: pointer;
+  
 }
 
 .card-produtos2{
-  margin-top: 7%;
+  margin-top: 10%;
 }
 
 .card {
@@ -54,7 +58,7 @@ html {
   align-items: center;
   justify-content: center;
   perspective: 1000px;
-  width: 72%;
+  width: 70%;
   height: 90%;
 }
 
@@ -79,7 +83,8 @@ html {
   transform: rotateY(0deg);
   border: 2px solid #FFAA00;
   background: linear-gradient(to right, #303e6b, #bd8e38);
-  -webkit-animation:color-change-2x 2s linear infinite alternate both;animation:color-change-2x 2s linear infinite alternate both;
+  -webkit-animation:color-change-2x 2s linear infinite alternate both;
+  animation:color-change-2x 2s linear infinite alternate both;
 
 }
 
@@ -139,7 +144,7 @@ html {
 }
 
 .bt {
-  width: 10%;
+  width: 15%;
   display: flex;
   flex-direction: column;
   scroll-snap-align: start;
