@@ -78,7 +78,7 @@ html {
   transform-style: preserve-3d;
   transition: all 1s ease;
   border-radius: 80px 80px;
-  
+  box-shadow: 25px 24px 16px -7px rgba(0,0,0,0.9);0px 10px 15px -3px rgba(0,0,0,0.5);
 }
 
 /* Parte frontal dos cards*/
