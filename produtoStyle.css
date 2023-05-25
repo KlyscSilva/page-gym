@@ -8,10 +8,9 @@
 
 html {
   scroll-behavior: smooth;
-  
 }
 
-
+/* Section produtos */
 .produtos {
   width: 100vw;
   height: 200vh;
@@ -23,23 +22,24 @@ html {
   margin: 0 auto;
 }
 
+/* Titulo dos produtos */
 .produtos h2 {
   color: #0a0a0a;
   font-size: 50px;
   text-align: center;
   letter-spacing: 1px;
-
 }
 
-.ajuste h2{
+/*Descrição dos produtos na paarte frontal do Card */
+.desc-produtos h2{
   color: #FFFFFF;
   font-size: 20px;
-}
-
-.ajuste p {
+ }
+.desc-produtos p {
   color: #FFFFFF;
 }
 
+/*Container dos produtos, separados por linhas de 3 produtos, card-produtos referente a primeira linha, card-produtos2 referente a 2 e 3 linha*/
 .card-produtos, .card-produtos2 {
   display: flex;
   align-items: center;
@@ -49,10 +49,12 @@ html {
   
 }
 
+/* Container referente a 2 e 3 linha dos produtos*/
 .card-produtos2{
   margin-top: 10%;
 }
 
+/*Container referten aos cards, linha de 3 cards */
 .card {
   display: flex;
   align-items: center;
@@ -62,6 +64,7 @@ html {
   height: 90%;
 }
 
+/* Referente aos cards individuais dos produtos*/
 .front,
 .back {
   height: 100%;
@@ -74,8 +77,10 @@ html {
   transform-style: preserve-3d;
   transition: all 1s ease;
   border-radius: 80px 80px;
+  
 }
 
+/* Parte frontal dos cards*/
 .front{
   align-items: center;
   justify-content: center;
@@ -85,9 +90,9 @@ html {
   background: linear-gradient(to right, #303e6b, #bd8e38);
   -webkit-animation:color-change-2x 2s linear infinite alternate both;
   animation:color-change-2x 2s linear infinite alternate both;
-
 }
 
+/*Referente a parte de tras dos cards*/
 .back {
   flex-direction: column;
   align-items: center;
@@ -95,10 +100,12 @@ html {
   transform: rotateY(180deg);
 }
 
+/*Imagem na parte frontal dos cards*/
 .front img {
   height: 60%;
 }
 
+/*Linha seprando imagem do texto frontal do card*/
 .front .line{
   width: 100%;
   border-bottom: 1px solid #393939;
@@ -106,43 +113,35 @@ html {
   margin: 15% 0 5% 0;
 }
 
+/*Titulo na parte de tras do card*/
 .back h5 {
   text-decoration: underline 5px #FFAA00;
   color: #000000;
   font-size: 24px;
-  
 }
 
+/*Descrição do produto na parete de tras do card*/
 .back p {
   color: #191919;
  font-size: 14px;
 }
 
-
-
-.products .ajuste {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  width: 90%;
-}
-
+/*Animação dos cards Front/Back*/
 .card:hover .front {
   transform: rotateY(-180deg);
 }
-
 .card:hover .back {
   transform: rotateY(0deg);
 }
 
-
+/*Container dos botoes*/
 .container-botoes{
   display: flex;
   justify-content: space-around;
   width: 90vw;
 }
 
+/*Container Botoes*/
 .bt {
   width: 15%;
   display: flex;
@@ -151,6 +150,7 @@ html {
   justify-content: space-evenly;
 }
 
+/* Botões individuais*/
 .bt button {
   overflow: hidden;
   border-radius: 10px;
@@ -168,6 +168,7 @@ html {
   background-color: #FFFF;
 }
 
+/*Icone do Botaão "WhatsAPP"*/
 .bt .icon {
   background-color: #00FF15;
   padding: 20px;
@@ -176,6 +177,7 @@ html {
   color: #FFFF;
 }
 
+/*Texto do Botão*/
 .bt span {
   padding: 0px 10px;
   color: #000000;
@@ -183,6 +185,7 @@ html {
   z-index: 2;
 }
 
+/*Animação do Botão*/
 .bt button:after {
   position: absolute;
   content: "";
@@ -196,18 +199,19 @@ html {
   z-index: 1;
   transform: scale(0, 1);
 }
-
 .bt button:hover:after {
   transform: scale(1, 1);
 }
 
+
+/*Hover do texto do Botão*/
 .bt button:hover span {
   color: #0a0a0a;
   font-weight: 600;
 }
 
 
-
+/*Container da Section Sobre */
 .sobre {
   height: 65vh;
   display: flex;
@@ -217,6 +221,7 @@ html {
   margin-top: 7% ;
 }
 
+/*Imagem da Section Sobre*/
 .sobre img {
   width: 25%;
   border-radius: 30%;
@@ -226,6 +231,7 @@ html {
   background-color: #e6e9f2;
 }
 
+/*Container dos textos da section Sobre*/
 .info-sobre{
   display: flex;
   align-items: flex-start;
@@ -234,11 +240,13 @@ html {
   margin: 0 auto;
 }
 
+/*Titulo da section sobre*/
 .sobre div h2 {
   color: #FFAA00;
   font-size: 36px;
 }
 
+/*Texto da section Sobre*/
 .sobre div p {
   color: #FFAA00;
   font-size: 18px;
