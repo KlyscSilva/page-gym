@@ -6,8 +6,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  
+
 }
+  
+
 
 html {
   scroll-behavior: smooth;
@@ -177,6 +179,7 @@ header{
   align-items: center;
   border: 2px solid #FFFFFF;
   margin-top: 3%;
+  border: solid 2px red;
 }
 
 /* Titulo dos produtos */
@@ -199,12 +202,14 @@ header{
 
 /*Container dos produtos, separados por linhas de 3 produtos*/
 .card-produtos {
-  width: 100vw;
+  width: 95vw;
   height: 20%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 50px;
+  padding-top: 15px;
+  cursor: pointer;
 }
 
 /*Container referten aos cards, linha de 3 cards */
@@ -212,7 +217,7 @@ header{
   display: flex;
   align-items: center;
   justify-content: center;
-  perspective: 1000px;
+  perspective: 1000px; 
   width: 30%;
   height: 95%;
 }
@@ -290,8 +295,9 @@ header{
 .container-botoes{
   display: flex;
   justify-content: space-around;
-  width: 100vw;
-  margin-top: -30px;
+  margin: -30px;
+  width: 95vw;
+  
   }
 
 
@@ -374,6 +380,7 @@ header{
   padding: 3% ;
   background-color: #0a53a7;
   margin-top: 7% ;
+  
 }
 
 /*Imagem da Section Sobre*/
