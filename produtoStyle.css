@@ -170,15 +170,23 @@ header{
 
 
 /* Section produtos */
+
+section{
+  
+  width: 95%;
+  height: 200vh;
+ 
+
+}
+
 .produtos {
-  width: 100vw;
-  height: 220vh;
+  
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
   border: 2px solid #FFFFFF;
-  margin-top: 3%;
+  margin-left: 3%;
   border: solid 2px red;
 }
 
