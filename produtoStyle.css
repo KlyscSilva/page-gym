@@ -8,7 +8,7 @@
   text-decoration: none;
 
 }
-  
+
 
 
 html {
@@ -565,7 +565,8 @@ header {
 }
 
 /*Descrição dos produtos na parte frontal do Card */
-.produtos .desc-produtos h2, p{
+.produtos .desc-produtos h2,
+p {
   color: black;
   font-size: 18px;
 }
@@ -658,7 +659,6 @@ header {
   justify-content: center;
   gap: 5px;
   background-color: white;
-  border-radius: 50% 50% 0 0;
   width: 100%;
   height: 40%;
   padding: 10px;
@@ -779,25 +779,18 @@ header {
 
 /*Container da Section Sobre */
 .sobre {
-  width: 100%;
+  padding: 25px;
   height: 65vh;
   margin-top: 30px;
   display: flex;
   align-items: center;
-justify-content: center;  
-background-color: #0a53a7;
+  gap: 30px;
+  background-color: #0a53a7;
 }
 
 /*Imagem da Section Sobre*/
 .sobre img {
-  width: 18%;
-  border-radius: 30%;
-  border: solid 5px #FFAA00;
-  margin-left: 20px;
-  margin-right: 25px;
-  cursor: pointer;
-  background-color: #e6e9f2;
-  
+  width: 300px;
 }
 
 /*Container dos textos da section Sobre*/
@@ -811,33 +804,31 @@ background-color: #0a53a7;
 
 /*Titulo da section sobre*/
 .sobre div h2 {
-  color: #FFAA00;
+  color: #FFFFFF;
   font-size: 36px;
 }
 
 /*Texto da section Sobre*/
 .sobre div p {
-  color: #FFAA00;
+  color: #FFFFFF;
   font-size: 18px;
-  margin-top: 15px;
-  margin-bottom: 30px;
+  margin: 25px 0;
+  line-height: 32px;
+  text-align: justify;
 }
 
 .bt2 {
   display: flex;
-  background: #e7ece7;
-  border-radius: 20px;
+  gap: 10px;
+  font-weight: 400;
+  background: #FFFFFF;
+  border-radius: 10px;
   padding: 10px;
   cursor: pointer;
-  letter-spacing: 1px;
   border: none;
-  gap: 10px;
 }
 
 .bt2:hover {
-
   background: #0fc70f;
   color: #FFFFFF;
-  font-weight: bold;
-  border: none;
 }

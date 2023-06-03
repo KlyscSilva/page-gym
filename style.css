@@ -6,12 +6,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
-  
-
-  
 }
-
-
 
 nav {
   display: flex;
@@ -22,11 +17,7 @@ nav {
   -webkit-transform: translate(-50%, 40%);
   transform: translate(-0%, 0%);
   background: linear-gradient(to left, #303e6b, #0e0d0d);
-  
- 
 }
-
-
 
 .logo-zeus{
   width: 5vw;
@@ -35,25 +26,20 @@ nav {
   border: solid 5px #EEC643;
   cursor: pointer;
   -webkit-animation:bounce-in-top 4.1s both;animation:bounce-in-top 3.1s both
-  
-}
-
-
-span h2 {
-  color: red;
 }
 
 span {
   color: #ffffff;
 }
 
-ul{
- 
-  position: relative;
-  display: flex;
-  
+span h2 {
+  color: red;
 }
 
+ul{ 
+  position: relative;
+  display: flex;
+}
 
 ul li {
   list-style: none; 
