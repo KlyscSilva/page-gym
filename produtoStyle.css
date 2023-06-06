@@ -11,10 +11,6 @@
 
 
 
-html {
-  scroll-behavior: smooth;
-}
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -131,7 +127,7 @@ header {
 
 .carrossel {
   display: flex;
-  box-shadow: 2px 2px 4px #070707;
+  box-shadow: 2px 2px 4px #021746de;
   overflow: hidden;
   height: 50vh;
   width: 95vw;
@@ -148,7 +144,7 @@ header {
 }
 
 .logo-carro {
-  object-fit: fill;
+  object-fit: scale-down;
   height: 50vh;
   width: 95vw;
 
@@ -832,3 +828,67 @@ p {
   background: #0fc70f;
   color: #FFFFFF;
 }
+
+/*footer*/
+
+section .contato {
+
+  padding: 35px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(150, 150, 150, 0.833);
+  list-style: none;
+
+}
+
+section a .contato {
+  background-color: rgb(242, 238, 235);
+
+}
+
+footer {
+  padding: 20px;
+  text-decoration: none;
+  background-color: rgba(0, 0, 0, 0.712);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.bt-footer{
+  display: flex;
+  gap: 30px;
+}
+
+:is(footer a:hover .ista){
+
+  background:#f20172;
+  text-decoration: none;
+  border-radius: 10px;
+  opacity: 0.7;
+  transform: scale(0.9)
+}
+
+
+
+:is(footer a:hover .face){
+
+  background:#536aea;
+  text-decoration: none;
+  border-radius: 10px;
+  transform: scale(0.9)
+}
+
+
+
+:is(footer a:hover .tik){
+
+  background:#6cea53;
+  text-decoration: none;
+  border-radius: 10px;
+  transform: scale(0.9)
+}
+
+

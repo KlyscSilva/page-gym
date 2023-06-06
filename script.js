@@ -2,6 +2,14 @@ const imgs = document.getElementById("carr")
 const img = document.querySelectorAll("#carr img");
 
 
+
+window.scroll(
+  {
+    top:0,
+    behavior:'smooth'
+  }
+)
+
 let idx = 0;
 
 
