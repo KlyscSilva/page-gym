@@ -586,8 +586,8 @@ p {
   align-items: center;
   justify-content: center;
   perspective: 1000px;
-  width: 250px;
-  height: 300px;
+  width: 270px;
+  height: 350px;
 
 }
 
@@ -630,7 +630,8 @@ p {
   align-items: center;
   justify-content: space-around;
   transform: rotateY(180deg);
-  padding: 10px;
+  padding: 20px;
+
 
 }
 
@@ -674,12 +675,14 @@ p {
   text-decoration: underline 5px #FFAA00;
   color: #000000;
   font-size: 24px;
+  text-align: center;
 }
 
 /*Descrição do produto na parete de tras do card*/
 .back p {
   color: #191919;
   font-size: 14px;
+  text-align: center;
 }
 
 /*Animação dos cards Front/Back*/
