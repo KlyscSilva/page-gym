@@ -9,8 +9,6 @@
 
 }
 
-
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -18,13 +16,17 @@ nav {
   overflow: hidden;
   -webkit-transform: translate(-50%, 40%);
   transform: translate(-0%, 0%);
-  background: linear-gradient(to left, #303e6b, #0e0d0d);
-  padding: 10px;
+  background: #0243B9;
+  padding: 5px 30px;
+}
+
+.logo,
+.logo-zeus {
+  display: flex;
+  width: 60px;
 }
 
 .logo-zeus {
-  width: 60px;
-  height: auto;
   border-radius: 60px;
   cursor: pointer;
   -webkit-animation: bounce-in-top 4.1s both;
@@ -32,12 +34,9 @@ nav {
 }
 
 ul {
-
   position: relative;
   display: flex;
-
 }
-
 
 ul li {
   list-style: none;
@@ -46,19 +45,15 @@ ul li {
 ul li a {
   color: #ffffff;
   text-decoration: none;
-  font-size: 20px;
   padding-left: 30px;
   font-weight: 400;
   transition: 0.5s;
 }
 
-
 ul li a:hover {
-
   color: #000;
   background: #ffffff;
   border-radius: 10px;
-
 }
 
 ul li a:before {
@@ -109,6 +104,19 @@ ul li:nth-child(6n+4) a:before {
   background: #F15152;
 }
 
+.burger {
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background: #FFFFFF;
+  margin: 5px;
+  transition: all .5s ease;
+  cursor: pointer;
+}
+
 /*Fim da estilização dos links da nav*/
 
 
@@ -117,9 +125,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  min-height: 70vh;
-
+  height: 65vh;
 
 }
 
@@ -127,11 +133,9 @@ header {
 
 .carrossel {
   display: flex;
-  box-shadow: 2px 2px 4px #021746de;
   overflow: hidden;
-  height: 50vh;
-  width: 95vw;
-  border-radius: 20px;
+  height: 100%;
+  z-index: -1;
 }
 
 .container {
@@ -139,8 +143,10 @@ header {
   align-items: center;
   transition: transform 0.5s ease-in;
   transform: translateX(0);
+}
 
-
+.container img {
+  background: transparent;
 }
 
 .logo-carro {
@@ -778,13 +784,13 @@ p {
 
 /*Container da Section Sobre */
 .sobre {
-  padding: 25px;
-  height: 65vh;
+  padding: 20px;
+  height: auto;
   margin-top: 30px;
   display: flex;
   align-items: center;
-  gap: 30px;
-  background-color: #0a53a7;
+  flex-direction: column;
+  background-color: #0243B9;
 }
 
 /*Imagem da Section Sobre*/
@@ -795,10 +801,7 @@ p {
 /*Container dos textos da section Sobre*/
 .info-sobre {
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
 }
 
 /*Titulo da section sobre*/
@@ -818,6 +821,7 @@ p {
 
 .bt2 {
   display: flex;
+  align-items: center;
   gap: 10px;
   font-weight: 400;
   background: #FFFFFF;
@@ -830,6 +834,10 @@ p {
 .bt2:hover {
   background: #0fc70f;
   color: #FFFFFF;
+}
+
+.fa-whatsapp {
+  font-size: 20px;
 }
 
 /*footer*/
@@ -852,12 +860,14 @@ section a .contato {
 
 footer {
   padding: 20px;
-  text-decoration: none;
-  background-color: rgba(0, 0, 0, 0.712);
+  gap: 10px;
   display: flex;
   align-items: center;
   flex-direction: column;
+}
 
+footer h3 {
+  font-weight: 400;
 }
 
 .bt-footer{
@@ -894,4 +904,90 @@ footer {
   transform: scale(0.9)
 }
 
+@media screen and (max-width: 958px){
+  .container-botoes {
+    display: none;
+  }
 
+  .info-sobre {
+    justify-content: initial;
+    align-items: center;
+  }
+
+  ul li a:before {
+  display: none;
+  }
+
+  ul li a:hover {
+  background: transparent;
+  color: #FFFFFF;
+  opacity: .6;
+  }
+  
+}
+
+@media screen and (max-width: 700px) {
+  nav {
+    overflow: visible;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+  }
+
+  .burger {
+    display: block;
+    cursor: pointer;
+  }
+
+  nav ul {
+    gap: 50px;
+    padding: 15px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .burger.active .line2 {
+    opacity: 0
+  }
+
+  .burger.active .line1 {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .burger.active .line3 {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .links {
+    position: fixed;
+    top: calc(100px - 31px);
+    right: -100%;
+    background: #0243B9;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 70%;
+    height: 100vh;
+    transition: all .5s;
+  }
+
+  .links.active {
+    right: 0;
+  }
+
+ 
+
+  .produtos .titulo-produtos {
+    font-size: 30px;
+  }
+
+  .info-sobre {
+    text-align: -webkit-center;
+    flex-direction: column;
+  }
+
+}

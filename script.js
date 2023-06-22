@@ -1,5 +1,14 @@
 const imgs = document.getElementById("carr")
 const img = document.querySelectorAll("#carr img");
+const burger = document.querySelector(".burger")
+const navLink = document.querySelector(".links")
+
+console.log(navLink)
+
+burger.addEventListener("click", () =>{
+    burger.classList.toggle("active")
+    navLink.classList.toggle("active")
+})
 
 
 

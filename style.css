@@ -1,103 +1,55 @@
-<<<<<<< HEAD
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-   font-family: 'Lato', sans-serif;
-font-family: 'Poppins', sans-serif;
-  
-=======
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
   font-family: 'Poppins', sans-serif;
-  text-decoration: none;
->>>>>>> b7caf1dc4ba72cc862cc021b440725fa07d55cad
+
 }
+
 body {
-    text-decoration: none;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: auto;
-    width: 100vw;
-    color: #141414;
-    list-style: none; 
-   
-
-<<<<<<< HEAD
-    }
-    
-
-section  {
-    
-    padding: 35px;
-    text-decoration: none;
-    display: flex;
-   justify-content: center;
-    background-color: rgba(150, 150, 150, 0.833);
-    list-style: none;
-  
-}
-section a {
-   background-color: rgb(242, 238, 235);
-   
-}
-
-footer {  
-    padding: 15px;
-    text-decoration: none;
-   display: flex;
-   justify-content: center;
-   background-color: rgba(0, 0, 0, 0.712);
-   list-style: none;
-   align-items: center;
-=======
-nav {
-  display: flex;
-  justify-content: space-between; 
-  align-items: center; 
-  min-height: 20vh; 
-  overflow: hidden;
-  -webkit-transform: translate(-50%, 40%);
-  transform: translate(-0%, 0%);
-  background: linear-gradient(to left, #303e6b, #0e0d0d);
-}
-
-.logo-zeus{
-  width: 5vw;
+  text-decoration: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: auto;
-  border-radius: 60px;
-  border: solid 5px #EEC643;
-  cursor: pointer;
-  -webkit-animation:bounce-in-top 4.1s both;animation:bounce-in-top 3.1s both
+  width: 100vw;
+  color: #141414;
+  list-style: none;
+
+
 }
 
-span {
-  color: #ffffff;
-}
 
-span h2 {
-  color: red;
-}
+section {
 
-ul{ 
-  position: relative;
+  padding: 35px;
+  text-decoration: none;
   display: flex;
+  justify-content: center;
+  background-color: rgba(150, 150, 150, 0.833);
+  list-style: none;
+
 }
 
-ul li {
-  list-style: none; 
-  text-align: center;
->>>>>>> b7caf1dc4ba72cc862cc021b440725fa07d55cad
+section a {
+  background-color: rgb(242, 238, 235);
+
+}
+
+footer {
+  padding: 15px;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.712);
+  list-style: none;
+  align-items: center;
 
 }
 
 a {
-   padding:0 20px;
+  padding: 0 20px;
 
 }

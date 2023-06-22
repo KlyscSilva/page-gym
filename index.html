@@ -15,22 +15,30 @@
 <body>
     <!--Criando o menu de navegação-->
     <nav>
-        <h2>
-            <span>
-                <img src="./assets/zeus-mascot-logo_609550-155.avif" alt="" class="logo-zeus"
-                    onclick="zeusIcon()" /></span>
-        </h2>
+        <div class="logo">
+            <img src="./assets/zeus-mascot-logo_609550-155.avif" alt="" class="logo-zeus" onclick="zeusIcon()" />
+        </div>
 
-        <ul>
-            <li><a href="#" data-text="home">Home</a></li>
-            <li><a href="#" data-text="Sobre">Sobre</a></li>
-            <li>
-                <a href="#" data-text="Produtos">Produtos</a>
-            </li>
-            <li>
-                <a href="#" data-text="Contato">Contato</a>
-            </li>
-        </ul>
+        <div class="links">
+            <ul>
+                <li><a href="#" data-text="home">Home</a></li>
+                <li>
+                    <a href="#produtos" data-text="Produtos">Produtos</a>
+                </li>
+                <li><a href="#sobre" data-text="Sobre">Sobre</a></li>
+
+                <li>
+                    <a href="#contato" data-text="Contato">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
     </nav>
     <!--Fim do menu de navegação-->
 
@@ -47,13 +55,13 @@
                 <img src="./assets/creatinasy.png" alt="creatina" class="logo-carro" />
                 <img src="./assets/sekka.jpg" alt="sekka" class="logo-carro" />
                 <img src="./assets/bl.png" alt="balanca" class="logo-carro" />
-                
+
             </div>
         </div>
 
     </header>
 
-    <section class="produtos">
+    <section class="produtos" id="produtos">
         <h2 class="titulo-produtos">Principais Produtos</h2>
 
         <div class="card-produtos">
@@ -132,16 +140,16 @@
                 </div>
             </div>
 
-              <div class="container-botoes">
-                 <div class="bt">
-                <a href="https://api.whatsapp.com/send?phone=5571993766553&text=Ol%C3%A1,%20estou%20interessado(a)%20no%20Whey%20100%25%20pure%20Integralmedica,%20gostaria%20de%20mais%20detalhes%20"
-                    target="_blank">
-                    <button class="bt1"><span>Eu quero!</span>
-                        <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
-                    </button>
-                </a>
+            <div class="container-botoes">
+                <div class="bt">
+                    <a href="https://api.whatsapp.com/send?phone=5571993766553&text=Ol%C3%A1,%20estou%20interessado(a)%20no%20Whey%20100%25%20pure%20Integralmedica,%20gostaria%20de%20mais%20detalhes%20"
+                        target="_blank">
+                        <button class="bt1"><span>Eu quero!</span>
+                            <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        </button>
+                    </a>
                 </div>
-              
+
                 <div class="bt">
                     <a href="https://api.whatsapp.com/send?phone=5571993766553&text=Ol%C3%A1,%20estou%20interessado(a)%20no%20Whey%20BlackSkull%20,%20gostaria%20de%20mais%20detalhes"
                         target="_blank">
@@ -216,9 +224,9 @@
                 <div class="back">
                     <h5>Balança digital</h5>
                     <p> Essa balança é ideal para ajudar você a seguir a sua dieta.
-                        <p>- É capaz de pesar de 1g até 10kg.</p>
-                        <p>- Possui a função TARA para pesar desconsiderando o peso do recipiente.</p>
-                        <p>- Grande precisão de pesagem, ajuda no preparo de porções.</p>
+                    <p>- É capaz de pesar de 1g até 10kg.</p>
+                    <p>- Possui a função TARA para pesar desconsiderando o peso do recipiente.</p>
+                    <p>- Grande precisão de pesagem, ajuda no preparo de porções.</p>
                 </div>
             </div>
 
@@ -248,7 +256,7 @@
                     </a>
                 </div>
 
-            </div> 
+            </div>
 
             <div class="card">
                 <div class="front">
@@ -314,7 +322,7 @@
             </div>
 
 
-             <div class="container-botoes">
+            <div class="container-botoes">
                 <div class="bt">
                     <a href="https://api.whatsapp.com/send?phone=5571993766553&text=Ol%C3%A1,%20estou%20interessado(a)%20no%20Thermo%20Sekka%20Abdomen,%20gostaria%20de%20mais%20detalhes%20%F0%9F%98%8A"
                         target="_blank">
@@ -340,51 +348,64 @@
                     </a>
                 </div>
 
-            </div> 
+            </div>
         </div>
     </section>
 
 
-    <section class="sobre">
-        <img src="./assets/sobre.png" alt="imagem de perfil">
+    <section class="sobre" id="sobre">
+
+        <div class="title">
+            <h2>SOBRE MIM</h2>
+        </div>
 
         <div class="info-sobre">
-            <h2>SOBRE MIM</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eos illum omnis necessitatibus sunt eveniet
-                ab aspernatur dolores! Voluptatum, laudantium. Perspiciatis soluta dolorum laboriosam magni nihil
-                incidunt ab obcaecati dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis
-                magnam aliquam dignissimos non quam omnis ab praesentium, enim qui commodi, vel quod ea obcaecati facere
-                ducimus incidunt modi provident officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Tenetur, dolor. Sapiente labore officiis praesentium, culpa accusamus delectus sint optio hic magni
-                fugiat obcaecati omnis vel, eius molestias distinctio, voluptas odio?</p>
+            <div class="foto">
+                <img src="./assets/sobre.png" alt="Foto de Gustavo">
+            </div>
 
-            <a href="https://api.whatsapp.com/send?phone=5511993766553&text=Ol%C3%A1,%20gostaria%20de%20falar%20como%20o%20Nutri!%20%F0%9F%98%8A"
-                target="_blank">
-                <button class="bt2"><span>Entre em contato</span>
-                    <div class="icon"><i class="fa-brands fa-whatsapp" class="iconn"></i></div>
-                </button>
-            </a>
+            <div class="container-text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia eos illum omnis necessitatibus sunt
+                    eveniet
+                    ab aspernatur dolores! Voluptatum, laudantium. Perspiciatis soluta dolorum laboriosam magni nihil
+                    incidunt ab obcaecati dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Corporis
+                    magnam aliquam dignissimos non quam omnis ab praesentium, enim qui commodi, vel quod ea obcaecati
+                    facere
+                    ducimus incidunt modi provident officiis? Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tenetur, dolor. Sapiente labore officiis praesentium, culpa accusamus delectus sint optio hic magni
+                    fugiat obcaecati omnis vel, eius molestias distinctio, voluptas odio?</p>
+
+                <a href="https://api.whatsapp.com/send?phone=5511993766553&text=Ol%C3%A1,%20gostaria%20de%20falar%20como%20o%20Nutri!%20%F0%9F%98%8A"
+                    target="_blank">
+                    <button class="bt2">
+                        <div class="icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <span>Entre em contato</span>
+                    </button>
+                </a>
+            </div>
         </div>
+
+
+
     </section>
 
+    <footer id="contato">
 
-       
-        
+        <h3> Me siga nas redes sociais </h3>
 
-    <footer>
-        
-            <h3> Me siga nas redes sociais </h3>
+        <div class="bt-footer">
 
-            <div class="bt-footer">
+            <a href="https://www.instagram.com/zeus.suplements/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"><img
+                    src="./img/instagram.svg" width="35" height="35" alt="" class="ista"></a>
+            <a href="https://www.facebook.com/zeussuplements71" target="_blank"><img src="./img/facebook.svg" width="35"
+                    height="35" alt="" class="face"></a>
+            <a href="#" target="_blank"><img src="./img/globe-solid.svg" width="35" height="35" alt="" class="tik"></a>
 
-            <a href="https://www.instagram.com/zeus.suplements/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank"><img src="./img/instagram.svg" width="35" height="35" alt="" class="ista"></a>
-            <a href="https://www.facebook.com/zeussuplements71" target="_blank"><img src="./img/facebook.svg" width="35" height="35" alt="" class="face"></a>
-            <a href="#" target="_blank"><img src="./img/globe-solid.svg" width="35"  height="35" alt="" class="tik"></a>
+        </div>
 
-            </div>
-            
-    
-        </footer>
+
+    </footer>
 
 
 
