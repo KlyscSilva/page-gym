@@ -985,8 +985,8 @@ footer h3 {
     display: flex;
     justify-content: center;
 
-    width: 70%;
-    height: 100vh;
+    width: 40%;
+    height: 50vh;
     transition: all .5s;
   }
 
