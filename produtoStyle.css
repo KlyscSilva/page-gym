@@ -802,12 +802,25 @@ p {
 .info-sobre {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 /*Titulo da section sobre*/
 .sobre div h2 {
   color: #FFFFFF;
   font-size: 36px;
+}
+
+.container-text, .container-text ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.container-text li {
+  list-style: initial;
+  color: white;
 }
 
 /*Texto da section Sobre*/
