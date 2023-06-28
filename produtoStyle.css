@@ -1003,4 +1003,8 @@ footer h3 {
     flex-direction: column;
   }
 
+  .container-text li {
+    list-style: none;
+  }
+
 }
