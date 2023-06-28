@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import   url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 * {
   margin: 0;
@@ -6,7 +6,10 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
   text-decoration: none;
+}
 
+html {
+  scroll-behavior: smooth;
 }
 
 nav {
@@ -981,7 +984,6 @@ footer h3 {
 
     display: flex;
     justify-content: center;
-    align-items: center;
 
     width: 70%;
     height: 100vh;
