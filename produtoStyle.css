@@ -1,4 +1,4 @@
-@import   url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 * {
   margin: 0;
@@ -660,10 +660,12 @@ p {
 .front img {
   height: 90%;
 }
-.text-mobile p{
+
+.text-mobile p {
   display: none;
-  
+
 }
+
 .desc-produtos {
   display: flex;
   flex-direction: column;
@@ -719,7 +721,8 @@ p {
 
 
 /*Container Botoes*/
-.bt, .bt-back {
+.bt,
+.bt-back {
   width: 15%;
   display: flex;
   flex-direction: column;
@@ -727,14 +730,15 @@ p {
   justify-content: space-evenly;
 }
 
-.bt-back{
+.bt-back {
   width: 100%;
   margin-bottom: -15px;
   display: none;
 }
 
 /* Botões individuais*/
-.bt button, .bt-back button {
+.bt button,
+.bt-back button {
   overflow: hidden;
   border-radius: 10px;
   position: relative;
@@ -752,7 +756,8 @@ p {
 }
 
 /*Icone do Botaão "WhatsAPP"*/
-.bt .icon , .bt-back .icon {
+.bt .icon,
+.bt-back .icon {
   background-color: #00FF15;
   padding: 20px;
   width: 40%;
@@ -761,7 +766,8 @@ p {
 }
 
 /*Texto do Botão*/
-.bt span , .bt-back span {
+.bt span,
+.bt-back span {
   padding-left: 10px;
   color: #000000;
   transition: all .3s ease .5s;
@@ -769,7 +775,8 @@ p {
 }
 
 /*Animação do Botão*/
-.bt button:after, .bt-back button:after  {
+.bt button:after,
+.bt-back button:after {
   position: absolute;
   content: "";
   right: 0;
@@ -783,13 +790,15 @@ p {
   transform: scale(0, 1);
 }
 
-.bt button:hover:after, .bt-back button:hover:after {
+.bt button:hover:after,
+.bt-back button:hover:after {
   transform: scale(1, 1);
 }
 
 
 /*Hover do texto do Botão*/
-.bt button:hover span , .bt-back button:hover span{
+.bt button:hover span,
+.bt-back button:hover span {
   color: #0a0a0a;
   font-weight: 600;
 }
@@ -825,7 +834,8 @@ p {
   font-size: 36px;
 }
 
-.container-text, .container-text ul {
+.container-text,
+.container-text ul {
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -896,14 +906,14 @@ footer h3 {
   font-weight: 400;
 }
 
-.bt-footer{
+.bt-footer {
   display: flex;
   gap: 30px;
 }
 
-:is(footer a:hover .ista){
+:is(footer a:hover .ista) {
 
-  background:#f20172;
+  background: #f20172;
   text-decoration: none;
   border-radius: 10px;
   opacity: 0.7;
@@ -912,9 +922,9 @@ footer h3 {
 
 
 
-:is(footer a:hover .face){
+:is(footer a:hover .face) {
 
-  background:#536aea;
+  background: #536aea;
   text-decoration: none;
   border-radius: 10px;
   transform: scale(0.9)
@@ -922,15 +932,15 @@ footer h3 {
 
 
 
-:is(footer a:hover .tik){
+:is(footer a:hover .tik) {
 
-  background:#6cea53;
+  background: #6cea53;
   text-decoration: none;
   border-radius: 10px;
   transform: scale(0.9)
 }
 
-@media screen and (max-width: 958px){
+@media screen and (max-width: 958px) {
   .container-botoes {
     display: none;
   }
@@ -938,47 +948,49 @@ footer h3 {
   .front img {
     margin-bottom: 30%;
   }
-  
-.desc-produtos {
-  position: absolute;
-  height: 100%;
-  top: 72%;
-  transition: all 0.5s ease-in-out;
-  justify-content: initial;
-}
+
+  .desc-produtos {
+    position: absolute;
+    height: 100%;
+    top: 72%;
+    transition: all 0.5s ease-in-out;
+    justify-content: initial;
+  }
 
 
-.desc-produtos .und{
-  margin-bottom: 20px;
-}
-.bt-back button{
-  width: 80%;
-  margin: 10px 0;
- 
-}
+  .desc-produtos .und {
+    margin-bottom: 20px;
+  }
+
+  .bt-back button {
+    width: 80%;
+    margin: 10px 0;
+
+  }
 
   .card:hover .front {
     transform: none;
   }
-  
+
   .card:hover .back {
     transform: none;
   }
 
-  .card:hover .front > .desc-produtos {
+  .card:hover .front>.desc-produtos {
     top: 20px;
     transition: all 0.5s ease-in-ou;
   }
 
-  .text-mobile p{
+  .text-mobile p {
     display: block;
     font-size: 12px;
   }
-  .back{
+
+  .back {
     display: none;
   }
-  
-  .bt-back{
+
+  .bt-back {
     display: block;
   }
 
@@ -988,15 +1000,15 @@ footer h3 {
   }
 
   ul li a:before {
-  display: none;
+    display: none;
   }
 
   ul li a:hover {
-  background: transparent;
-  color: #FFFFFF;
-  opacity: .6;
+    background: transparent;
+    color: #FFFFFF;
+    opacity: .6;
   }
-  
+
 }
 
 @media screen and (max-width: 700px) {
@@ -1051,7 +1063,7 @@ footer h3 {
     right: 0;
   }
 
- 
+
 
   .produtos .titulo-produtos {
     font-size: 30px;
