@@ -660,7 +660,10 @@ p {
 .front img {
   height: 90%;
 }
-
+.text-mobile p{
+  display: none;
+  
+}
 .desc-produtos {
   display: flex;
   flex-direction: column;
@@ -716,17 +719,22 @@ p {
 
 
 /*Container Botoes*/
-.bt {
+.bt, .bt-back {
   width: 15%;
   display: flex;
   flex-direction: column;
   scroll-snap-align: start;
   justify-content: space-evenly;
+}
 
+.bt-back{
+  width: 100%;
+  margin-bottom: -15px;
+  display: none;
 }
 
 /* Botões individuais*/
-.bt button {
+.bt button, .bt-back button {
   overflow: hidden;
   border-radius: 10px;
   position: relative;
@@ -744,7 +752,7 @@ p {
 }
 
 /*Icone do Botaão "WhatsAPP"*/
-.bt .icon {
+.bt .icon , .bt-back .icon {
   background-color: #00FF15;
   padding: 20px;
   width: 40%;
@@ -753,7 +761,7 @@ p {
 }
 
 /*Texto do Botão*/
-.bt span {
+.bt span , .bt-back span {
   padding-left: 10px;
   color: #000000;
   transition: all .3s ease .5s;
@@ -761,7 +769,7 @@ p {
 }
 
 /*Animação do Botão*/
-.bt button:after {
+.bt button:after, .bt-back button:after  {
   position: absolute;
   content: "";
   right: 0;
@@ -775,13 +783,13 @@ p {
   transform: scale(0, 1);
 }
 
-.bt button:hover:after {
+.bt button:hover:after, .bt-back button:hover:after {
   transform: scale(1, 1);
 }
 
 
 /*Hover do texto do Botão*/
-.bt button:hover span {
+.bt button:hover span , .bt-back button:hover span{
   color: #0a0a0a;
   font-weight: 600;
 }
@@ -925,6 +933,53 @@ footer h3 {
 @media screen and (max-width: 958px){
   .container-botoes {
     display: none;
+  }
+
+  .front img {
+    margin-bottom: 30%;
+  }
+  
+.desc-produtos {
+  position: absolute;
+  height: 100%;
+  top: 72%;
+  transition: all 0.5s ease-in-out;
+  justify-content: initial;
+}
+
+
+.desc-produtos .und{
+  margin-bottom: 20px;
+}
+.bt-back button{
+  width: 80%;
+  margin: 10px 0;
+ 
+}
+
+  .card:hover .front {
+    transform: none;
+  }
+  
+  .card:hover .back {
+    transform: none;
+  }
+
+  .card:hover .front > .desc-produtos {
+    top: 20px;
+    transition: all 0.5s ease-in-ou;
+  }
+
+  .text-mobile p{
+    display: block;
+    font-size: 12px;
+  }
+  .back{
+    display: none;
+  }
+  
+  .bt-back{
+    display: block;
   }
 
   .info-sobre {
