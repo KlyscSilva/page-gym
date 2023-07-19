@@ -573,9 +573,12 @@ header {
 .produtos .desc-produtos h2,
 p {
   color: black;
-  font-size: 18px;
+  font-size: 18px; 
 }
 
+.seta{
+  display: none;
+}
 
 /*Container dos produtos, separados por linhas de 3 produtos*/
 .card-produtos {
@@ -665,6 +668,8 @@ p {
   display: none;
 
 }
+
+
 
 .desc-produtos {
   display: flex;
@@ -957,6 +962,20 @@ footer h3 {
     justify-content: initial;
   }
 
+  .desc-produtos h2{
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+    justify-content: center;
+    margin-left:25%;
+    text-align: justify;
+  }
+  
+  .seta{
+   width: 15%;
+   margin-left: auto;
+   display: block;
+  }
 
   .desc-produtos .und {
     margin-bottom: 20px;
@@ -980,6 +999,8 @@ footer h3 {
     top: 20px;
     transition: all 0.5s ease-in-ou;
   }
+
+  
 
   .text-mobile p {
     display: block;
