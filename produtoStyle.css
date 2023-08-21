@@ -957,7 +957,7 @@ footer h3 {
   .desc-produtos {
     position: absolute;
     height: 100%;
-    top: 72%;
+    top: 65%;
     transition: all 0.5s ease-in-out;
     justify-content: initial;
   }
@@ -978,12 +978,12 @@ footer h3 {
   }
 
   .desc-produtos .und {
-    margin-bottom: 20px;
+    margin-bottom: 3px;
   }
 
   .bt-back button {
     width: 80%;
-    margin: 10px 0;
+    margin: 5px 0;
 
   }
 
